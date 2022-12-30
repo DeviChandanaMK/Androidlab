@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="259dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/rslt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <Button
+            android:id="@+id/sum"
+            android:layout_width="64dp"
+            android:layout_height="70dp"
+            android:text="+"
+            app:layout_column="0"
+            app:layout_row="0" />
+        <Button
+            android:id="@+id/div"
+            android:layout_width="64dp"
+            android:layout_height="70dp"
+            android:text="/"
+            app:layout_column="3"
+            app:layout_row="0" />
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="64dp"
+            android:layout_height="70dp"
+            android:text="*"
+            app:layout_column="2"
+            app:layout_row="0" />
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="64dp"
+            android:layout_height="70dp"
+            android:text="-"
+            app:layout_column="1"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
+    <LinearLayout
+        android:layout_width="337dp"
+        android:layout_height="178dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <EditText
+            android:id="@+id/fNo"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:ems="10"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/sNo"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/rslt"
+        android:layout_width="239dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="132dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

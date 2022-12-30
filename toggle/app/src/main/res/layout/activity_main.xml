@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="95dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="228dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent">
+        <ToggleButton
+            android:id="@+id/tg"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:text="ToggleButton" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="97dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="84dp"
+            android:layout_height="123dp"
+            app:srcCompat="@android:drawable/ic_delete" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

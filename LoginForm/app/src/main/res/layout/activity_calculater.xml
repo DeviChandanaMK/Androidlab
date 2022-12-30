@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".calculater">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid"
+        android:layout_width="412dp"
+        android:layout_height="401dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/clr"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="C"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/n7"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="7"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/n4"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="4"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/n1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="1"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/n00"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="00"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/modu"
+            android:layout_width="106dp"
+            android:layout_height="80dp"
+            android:text="%"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/n8"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:text="8"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/n0"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:text="0"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/n2"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:text="2"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/n5"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:text="5"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="."
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/n3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="3"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/n9"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="9"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/n6"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="6"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:text="/"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/eql"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:text="="
+            app:layout_column="3"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:text="+"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:text="X"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:text="-"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="287dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/grid"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/inputs"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ans"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
